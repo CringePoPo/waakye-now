@@ -827,4 +827,12 @@ textarea {
   height: 50px;
   border-radius: 50%;
   background: rgba(59, 93, 80, 0.2);
+}
+
+.products-service {
+  margin: 15px 0;
+}
+.products-service .row .col-lg-3 video {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
