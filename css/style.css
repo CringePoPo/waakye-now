@@ -1,10 +1,162 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+.card-group,
+.card {
+  aspect-ratio: 5/7;
+}
+
+.card-group,
+.big-card {
+  width: 30vmin;
+}
+
+.card-group {
+  position: relative;
+  /* top: 80%; */
+  transition: transform 400ms ease;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  transition: transform 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  background-position: center;
+  background-size: cover;
+}
+
+.big-card {
+  border-radius: 20px !important;
+}
+
+.little-card {
+  width: 12vmin;
+  border-radius: 10px !important;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.big-card:nth-child(2) {
+  background-image: url("../images/salad.png");
+  transform: translateX(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(4) {
+  transform: rotate(2deg);
+  background-image: url("https://i.ytimg.com/vi/v4w6_3fUzmI/maxresdefault.jpg");
+}
+
+.big-card:nth-child(6) {
+  background-image: url("https://allnigerianfoods.com/wp-content/uploads/fried_rice_recipe-500x361.jpg");
+  transform: translateX(-6%) rotate(-3deg);
+}
+
+.big-card:nth-child(8) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHlGxb37tXLWP1P_CKNCXG-7fTv26-9ivEA&usqp=CAU");
+  transform: translate(10%, 3%) rotate(5deg);
+}
+
+/*   
+  .card-group[data-index="1"] > .big-card:nth-child(6) {
+    background-image: url("https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  }
+
+  .card-group[data-index="1"] > .big-card:nth-child(8) {
+    background-image: url("https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  } */
+.little-card:nth-child(1) {
+  background-image: url("../images/waak.png");
+}
+
+.little-card:nth-child(3) {
+  background-image: url("https://goldentouchfoods.co.uk/wp-content/uploads/2019/04/photo.jpg");
+}
+
+.little-card:nth-child(5) {
+  background-image: url("https://www.mydiasporakitchen.com/wp-content/uploads/2017/09/img_0678.jpg");
+}
+
+.little-card:nth-child(7) {
+  background-image: url("https://breadboozebacon.com/wp-content/uploads/2017/12/Fresh-Vegetable-Salad-SQUARE.jpg");
+}
+
+.card-group:hover > .card {
+  box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+
+.card-group:hover > .big-card:nth-child(2) {
+  transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover > .big-card:nth-child(4) {
+  transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover > .big-card:nth-child(6) {
+  transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover > .big-card:nth-child(8) {
+  transform: translate(75%, 16%) rotate(24deg);
+}
+
+.card-group:hover > .little-card:nth-child(1) {
+  transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.card-group:hover > .little-card:nth-child(3) {
+  transform: translate(160%, 170%) rotate(15deg);
+  z-index: 20;
+}
+
+.card-group:hover > .little-card:nth-child(5) {
+  transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(7) {
+  transform: translate(-290%, 200%) rotate(-15deg);
+}
+
+.local-meals {
+  /*   
+    .card-group[data-index="1"] > .big-card:nth-child(6) {
+      background-image: url("https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    }
+
+    .card-group[data-index="1"] > .big-card:nth-child(8) {
+      background-image: url("https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    } */
+}
+.local-meals .big-card:nth-child(2) {
+  background-image: url("https://ocdn.eu/pulscms-transforms/1/DNJktkqTURBXy82MWE5ZGVmYTFiMDQ5NDVmYWU1NWYyNWZiZTYwNDhiMS5qZmlmkpUDAMx9zQO5zQIYkwXNAoDNAUA");
+  transform: translateX(-10%) rotate(-1deg);
+}
+.local-meals .big-card:nth-child(4) {
+  transform: rotate(2deg);
+  background-image: url("https://static.finmail.com/wp-content/uploads/2020/06/18155318/IMG_1573.jpg");
+}
+.local-meals .big-card:nth-child(6) {
+  background-image: url("https://agameals.com/wp-content/uploads/2021/12/maxresdefault-40-1140x694.jpg");
+  transform: translateX(-6%) rotate(-3deg);
+}
+.local-meals .big-card:nth-child(8) {
+  background-image: url("https://i.pinimg.com/736x/4f/6b/4a/4f6b4a8f585b6689008afe561f074c77.jpg");
+  transform: translate(10%, 3%) rotate(5deg);
+}
+.local-meals .little-card:nth-child(1) {
+  background-image: url("https://ocdn.eu/pulscms-transforms/1/Ak6ktkpTURBXy9hNjFhNGE3OTI2ZTZkZDhlYjQ3MDY2YTgxYzhjNTYxZC5qcGeSlQMAzKfNAZDM4ZMFzQKAzQFA");
+}
+.local-meals .little-card:nth-child(3) {
+  background-image: url("https://d2j6dbq0eux0bg.cloudfront.net/images/78636257/3301408566.jpg");
+}
+.local-meals .little-card:nth-child(5) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzBJuhKJ5SOwDb6gT1_2xiEswPVUBsmLEeQ&usqp=CAU");
+}
+.local-meals .little-card:nth-child(7) {
+  background-image: url("https://i.ytimg.com/vi/3Xt58Sujaw0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDu3xO3OWq2OioXq3fSILlWFpdy_A");
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -17,6 +169,10 @@ body {
   color: #6a6a6a;
   font-size: 14px;
   background-color: #eff2f1;
+}
+
+.h-clr {
+  color: #f9bf29;
 }
 
 a {
@@ -835,4 +991,20 @@ textarea {
 .products-service .row .col-lg-3 video {
   height: 100%;
   width: 100%;
+}
+
+.crew-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.crew-img img {
+  width: 710px;
+  height: 370px;
+  object-fit: cover;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 21;
+  top: -120px;
+  left: 50%;
 }/*# sourceMappingURL=style.css.map */
